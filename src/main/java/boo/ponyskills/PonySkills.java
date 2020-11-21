@@ -12,11 +12,14 @@ System.out.println("onLoad");
     @Override
     public void onEnable() {
         System.out.println("onEnable");
+        getServer().getPluginManager().registerEvents(new PlayerJoinListener(), this);
+
     }
 
     @Override
     public void onDisable() {
         System.out.println("onDisable");
     }
+
 
 }
